@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Encontre representantes e pontos de venda dos Produtos Majestic perto de você.">
+    <title>Representantes | Produtos Majestic</title>
+    <link rel="icon" href="favicon.ico" sizes="any">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="img/favicon-192.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="preconnect" href="https://maxcdn.bootstrapcdn.com">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="topo">
+        <div class="container topo-flex">
+            <a class="marca" href="index.html" aria-label="Produtos Majestic">
+                <img src="img/majestic.png" class="logo" alt="Produtos Majestic">
+            </a>
+            <nav class="menu" aria-label="Navegação principal">
+                <a href="index.html">Home</a>
+                <a href="index.html#historia">Nossa História</a>
+                <a href="index.html#produtos">Produtos</a>
+                <a href="representantes.html">Representantes</a>
+                <a href="index.html#contato">Contato</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="busca-hero">
+            <img src="img/embalagens.jpg" alt="Doce de leite Majestic">
+            <div class="container busca-conteudo">
+                <p class="selo">Representantes</p>
+                <h1>Encontre Majestic mais perto de você</h1>
+                <p>Selecione o estado e a cidade para consultar representantes e pontos de venda cadastrados.</p>
+
+                <div class="form-busca" aria-label="Busca de representantes">
+                    <label>
+                        Estado
+                        <select id="estado" name="estado">
+                            <option value="">Selecione o estado</option>
+                        </select>
+                    </label>
+                    <label>
+                        Cidade
+                        <select id="cidade" name="cidade" disabled>
+                            <option value="">Selecione a cidade</option>
+                        </select>
+                    </label>
+                    <button type="button" id="buscarRepresentantes">Buscar</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="resultado secao" aria-live="polite">
+            <div class="container">
+                <div class="resultado-topo">
+                    <div>
+                        <p class="selo">Resultado</p>
+                        <h2>Pontos encontrados</h2>
+                    </div>
+                    <p id="resumoBusca">Faça uma busca para ver os contatos disponíveis.</p>
+                </div>
+                <div id="cards" class="cards-representantes"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <div class="container rodape-container">
+            <div class="rodape-info">
+                <h2>Laticínios Alfenense - Produtos Majestic</h2>
+                <p>Rua Treze de Maio, 840 - Centro | Alfenas - MG</p>
+                <p>Telefone: (35) 3291-1079 | WhatsApp: (35) 99842-1087</p>
+                <span>Todos os direitos reservados | Marca registrada | 1975</span>
+            </div>
+            <img src="img/logo-produto-majestic.png" alt="Produtos Majestic">
+        </div>
+    </footer>
+
+    <a class="whatsapp" href="https://wa.me/5535998421087?text=Ol%C3%A1!%20Vi%20o%20site%20da%20Majestic%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es." target="_blank" rel="noopener" aria-label="Conversar pelo WhatsApp">
+        <i class="fa fa-whatsapp" aria-hidden="true"></i>
+    </a>
+
+    <script src="validacao.js"></script>
+</body>
+</html>
